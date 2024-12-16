@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 237, 242, 255; /* Light blue */
+  --background-end-rgb: 237, 242, 255; /* Lighter blue */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Roboto', sans-serif; /* Clean and modern font */
+}
+
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Welcome Section */
+h1 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 800; /* Extra bold */
+  color: #1F2937; /* Dark text */
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem; /* 32px */
+}
+
+/* Section for Links */
+.flex {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: center;
+  align-items: center; /* Center buttons horizontally */
+  gap: 1.5rem; /* 24px */
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.bg-blue-600 {
+  background-color: #2563eb;
+}
+
+.bg-green-500 {
+  background-color: #10b981;
+}
+
+.bg-green-600 {
+  background-color: #059669;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+}
+
+.py-2 {
+  padding-top: 0.5rem; /* 8px */
+  padding-bottom: 0.5rem; /* 8px */
+}
+
+.px-4 {
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+}
+
+.rounded {
+  border-radius: 0.375rem; /* 6px */
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #2563eb;
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #059669;
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transform:hover {
+  transform: scale(1.05);
+}
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 700;
+  color: #1F2937;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 3rem;
+}
+
+.form-section h2 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 0.75rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.375rem; /* 6px */
+  width: 100%;
+  font-size: 1rem; /* 16px */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #3B82F6; /* Blue border on focus */
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem; /* 6px */
+  font-weight: 700;
+  font-size: 1rem; /* 16px */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.bg-blue-500 {
+  background-color: #3B82F6;
+}
+
+.bg-blue-600 {
+  background-color: #2563EB;
+}
+
+.bg-green-500 {
+  background-color: #10B981;
+}
+
+.bg-green-600 {
+  background-color: #059669;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #2563EB;
+}
+
+button[type="submit"].bg-green-500:hover {
+  background-color: #059669;
+}
+
+.logo{
+  height: 200px;
+}
+
+
+/* Question Card */
+.question-card {
+  background-color: #ffffff;
+  border-radius: 0.375rem;
+  border: 1px solid #E5E7EB;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-5px);
+}
+
+.question-card p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  width: auto;
+  font-size: 1rem;
+  border: 1px solid #E5E7EB;
+}
+
+button[type="submit"] {
+  width: auto;
+  padding: 0.5rem 1.25rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+}
+
+nav img {
+  height: 3rem; /* 48px */
+  width: auto;
+}
+.margin-class{
+  margin-top: 20px;
+}
+.margin-class2{
+  margin-left: 20px;
+}
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.5rem; /* 40px */
+  }
+}
